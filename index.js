@@ -7,9 +7,7 @@ import { queryReducer } from './app/reducers/reducers.js';
 import thunkMiddleware from 'redux-thunk';
 import { QueryContainer } from './app/components/Query';
 
-const createStoreWithMiddleware =   applyMiddleware(
-                                        thunkMiddleware
-                                    )(createStore);
+const createStoreWithMiddleware = applyMiddleware(thunkMiddleware)(createStore);
 
 const Main = () => {
     return (
